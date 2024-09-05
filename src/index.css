@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-neutral-800;
+}
+
+.gallery {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.rec-widget {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    @apply bg-[#3a3a3a];
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    @apply bg-neutral-600;
+  }
+}
